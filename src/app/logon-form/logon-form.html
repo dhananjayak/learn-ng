@@ -1,0 +1,17 @@
+<form [formGroup]="logonForm" class="ui form" (ngSubmit)="onSubmit()">
+  <div class="field">
+    <label>User ID</label>
+    <input type="text"
+           name="id"
+           placeholder="Enter user id"
+           formControlName="id" />
+  </div>
+  <div class="field">
+    <label>Last Name</label>
+    <input type="password"
+           name="password"
+           placeholder="Enter Password"
+           formControlName="password" />
+  </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>

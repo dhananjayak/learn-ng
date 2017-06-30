@@ -1,3 +1,20 @@
 <h1>
   {{title}}
 </h1>
+
+<div class="ui text menu">
+  <div class="ui item">
+    <a routerLink="">Login</a>
+  </div>
+  <div class="ui item">
+    <a routerLink="search">Search</a>
+  </div>
+  <div class="ui item">
+    <a routerLink="fuel">Fuel Prices</a>
+  </div>
+</div>
+
+<div class="ui container">
+  <router-outlet>
+  </router-outlet>
+</div>

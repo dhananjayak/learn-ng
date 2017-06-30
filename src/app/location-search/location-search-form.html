@@ -1,0 +1,23 @@
+<form [formGroup]="searchForm" class="ui form" (ngSubmit)="onSubmit()">
+  <div class="field">
+    <label for="">
+        Select Field
+    </label>
+    <select class="ui dropdown"
+            formControlName="searchField"
+            (change)="onSearchFieldChange()"
+            >
+      <option value="">Search Field</option>
+      <option value="Pincode">Pincode</option>
+      <option value="DistrictName">District</option>
+    </select>
+  </div>
+  <div class="field">
+    <label>Value</label>
+    <input type="text"
+           name="search-value"
+           placeholder="Enter Search Value"
+           formControlName="searchValue" />
+  </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>

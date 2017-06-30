@@ -1,0 +1,16 @@
+<div class="ui five column grid">
+  <div class="row">
+    <div class="column">Name</div>
+    <div class="column">Region</div>
+    <div class="column">City</div>
+    <div class="column">District</div>
+    <div class="column">Pincode</div>
+  </div>
+  <div class="row" *ngFor="let location of locations">
+    <div class="column">{{location.name}}</div>
+    <div class="column">{{location.region}}</div>
+    <div class="column">{{location.city}}</div>
+    <div class="column">{{location.district}}</div>
+    <div class="column">{{location.pincode}}</div>
+  </div>
+</div>

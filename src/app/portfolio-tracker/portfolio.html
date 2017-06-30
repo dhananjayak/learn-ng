@@ -1,0 +1,17 @@
+<form [formGroup]="stockListForm" class="ui form" (ngSubmit)="onSubmit()">
+  <div class="field">
+    <label>Symbol</label>
+    <input type="text"
+           name="symbol"
+           placeholder="Enter symbol"
+           formControlName="symbol" />
+  </div>
+  <div class="field">
+    <label>Quantity</label>
+    <input type="text"
+           name="quantity"
+           placeholder="Enter Quantity"
+           formControlName="quantity" />
+  </div>
+  <button class="ui button" type="submit">Add</button>
+</form>
